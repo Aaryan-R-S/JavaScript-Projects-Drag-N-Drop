@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop</title>
+    <style>
+        * {
+            background-color: green;
+        }
+        .cont{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: greenyellow;
+            border: 2px solid;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .imgbox {
+            background: url('https://source.unsplash.com/random/200x200?cat');
+            height: 196px;
+            width: 196px;
+            cursor: grab;
+            border: 2px solid black;
+        }
+        .hold{
+            border: 2px solid yellow;
+        }
+        .dash{
+            border-style: dashed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box">
+            <div class="imgbox" draggable="true"></div>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
